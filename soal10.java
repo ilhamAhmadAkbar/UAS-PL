@@ -10,7 +10,7 @@ public class soal10 {
         int length = input.nextInt();
         int[] arr = new int[length];
 
-        System.out.println("Masukkan elemen array:");
+        System.out.println("Masukkan angka :");
         for (int i = 0; i < length; i++) {
             arr[i] = input.nextInt();
         }
@@ -18,9 +18,9 @@ public class soal10 {
         int[] kelipatan5 = searchKelipatan5(arr);
 
         if (kelipatan5.length == 0) {
-            System.out.println("Tidak ada angka kelipatan 5 dalam array.");
+            System.out.println("Tidak ada angka kelipatan 5.");
         } else {
-            System.out.print("Angka kelipatan 5 dalam array adalah: ");
+            System.out.print("Angka kelipatan 5 dari : ");
             for (int i = 0; i < kelipatan5.length; i++) {
                 System.out.print(kelipatan5[i] + " ");
             }
@@ -35,7 +35,7 @@ public class soal10 {
             }
         }
 
-        Collections.sort(tempArr); // Mengurutkan array kelipatan 5 dari terkecil ke terbesar.
+        Collections.sort(tempArr);
 
         int[] kelipatan5Arr = new int[tempArr.size()];
         for (int i = 0; i < tempArr.size(); i++) {
